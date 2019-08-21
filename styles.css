@@ -131,11 +131,11 @@ font-size:1.2em;
     }                        
 
 /*animation*/
-h1 {
+html {
           -moz-animation:home 5s ease 2s 2;
            animation:home 5s ease 2s 2;
        }                 
-@keyframes home  /*M8LO10 Demonstrate a CSS animation or transition - This is a transitional changing the h1 background 
+@keyframes home  /*M8LO10 Demonstrate a CSS animation or transition - This is a transitional changing the background 
 color and it effects every page when it opens every page*/
                 {
                     0%{background-color:hsl(0, 98%, 25%);}
