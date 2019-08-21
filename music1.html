@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   V3
+   
+   The Lyrics Website
+   Author: Daniel Garcia
+   Date:   08/14/2019
+   
+   Filename: music1.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>The Lyrics</title>
+   <link href="styles.css" rel="stylesheet"/>
+   <link href="table.css" rel="stylesheet"/>
+</head>
+<body>
+ <header>
+    <h1>The Lyrics</h1>
+ </header>
+    <nav id="horizontal">   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="music1.html">Music</a></li>
+            <li><a href="other.html">Survey</a></li>
+        </ul>
+    </nav>
+    
+    <h2>Music</h2>
+    <table class="music">
+       <colgroup>
+           <col id="label"/>
+           <col class="info" span="3" /> 
+       </colgroup>
+       
+       <thead>
+         <tr>
+            <th>Song Title</th>
+            <th>Year Recorded</th>
+            <th>Song Writer</th>
+            <th>Listen to song</th>            
+         </tr>
+         </thead>
+         <tbody>
+         <tr>
+            <td> So What</td>
+            <td>1965</td>
+            <td>Chris Gaylord</td>
+            <td><a href="https://www.youtube.com/watch?v=bXgFHlJ7TdY">&#9835;</a></td>            
+        </tr>    
+        <tr>
+            <td>They Can't Hurt Me</td>
+            <td>1965</td>
+            <td>Chris Gaylord</td>
+            <td><a href="https://www.youtube.com/watch?v=jvocDcHxKCE"> &#9835;</a></td>             
+        </tr>
+        <tr>
+            <td>My Son</td>
+            <td>1966</td>
+            <td>Craig Carl</td>
+            <td><a href="https://www.youtube.com/watch?v=2PaXtahdXmA">&#9835; </a></td> 
+             
+        </tr>
+        <tr>
+            <td>So Glad</td>
+            <td>1966</td>
+            <td>Craig Carl</td>
+            <td><a href="https://www.youtube.com/watch?v=2j8l9hNQE_E">&#9835; </a></td>         
+        </tr>
+        <tr>
+            <td>Mr Man</td>
+            <td>1967</td>
+            <td>Craig Carl</td>
+            <td>
+                <audio controls> <!-- /*M8LO7 Demonstrate the use of the <audio> element for embedding audio in a Web page (HTML)*/ -->
+                    <source src="Music/Mr_Man.mp3" type="audio/mp3" />
+                    <source src="Music/Mr_Man.mp3" type="audio/ogg" />
+                    <p><em>To play this this clip, your browser needs to support HTML5 </em></p>
+                </audio>
+            </td>           
+        </tr>
+        <tr>
+            <td>Wait</td>
+            <td>1967</td>
+            <td>Craig Carl</td>
+            <td>
+                <audio controls ><!-- /*M8LO7 Demonstrate the use of the <audio> element for embedding audio in a Web page (HTML)*/ -->
+                    <source src="Music/Wait.mp3" type="audio/mp3" />
+                    <source src="Music/Wait.mp3" type="audio/ogg" />
+                    <p><em>To play this this clip, your browser needs to support HTML5 </em></p>
+                </audio>
+            </td>                   
+        </tr>
+        <tr>
+            <td>Wake Up To My Voice</td>
+            <td>1967-1968</td>
+            <td>Craig Carl</td>
+            <td><a href="https://www.youtube.com/watch?v=Hs-EgNCin7g">&#9835; </a></td>  
+                        
+        </tr>
+        <tr>
+            <td>Can't See You Anymore</td>
+            <td>1967-1968</td>
+            <td>Bill Garcia</td>
+            <td><a href="https://www.youtube.com/watch?v=G3Hhvsl9W2U">&#9835;</a></td>                   
+        </tr>
+        <tr>
+            <td>Why Did He Go</td>
+            <td>1967-1968</td>
+            <td>Craig Carl</td>
+            <td><a href="https://www.youtube.com/watch?v=qvxpjeLxA6s">&#9835;</a></td>                
+        </tr>
+        <tr id= "video">
+            <td colspan="4">Video</td>               
+        </tr>
+        <tr>
+            <td colspan="4">This is footage from the TV 8 Danctime show featuring the songs My Son and So Glad.</td>              
+        </tr>
+        <tr>
+            <td colspan="4"><!-- M8LO9  Demonstrate the use of the iframe element (HTML) -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4fA21aduf7g" 
+                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </td>              
+        </tr>
+      
+    </tbody>  
+    <tfoot>
+            <tr>
+                <td colspan="4">All songs recorded by The Lyrics</td> <!--/*M6LO4 Demonstrate how to span multiple rows or multiple 
+                columns in a table. Used to make all 4  columns in the footer into one -->
+            </tr>
+    </tfoot>    
+    </table>
+</body>
+
+</html>

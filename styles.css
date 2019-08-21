@@ -1,0 +1,144 @@
+ @charset "UTF-8"; 
+ /*background*/
+ html{background-image:url("images/lyricsBackground.png");}
+ 
+ /* List Styles */
+li{list-style-type:none;}
+h2, h3{
+        font-size:2em;
+        color:white;
+        text-align:center;
+        width:100%;
+        background-color:hsl(0, 98%, 25%);
+      }
+p{font-size:1.6em;}
+a:hover,  a:visited, a:link,  a:active  
+{
+    text-decoration: none;
+    font-size:2em;
+    color:hsl(0, 98%, 25%);
+}
+a:hover{
+          color:white;
+          font-size:2.5em;
+       } 
+ body{
+        display:-webkit-flex;
+        display:flex;
+        -webkit-flex-flow:row wrap;
+        flex-flow:row wrap;       
+     }     
+ header
+{  
+    display:flex;
+    width:70%;
+    height:150px;
+} 
+h1
+  {
+    margin-top:20px;
+    margin-left:35px;
+    flex:1 1 600px;
+    font-size:6em;    
+    color:hsl(0, 98%, 25%);
+    font-family:"Brush Script MT"; 
+  }
+ 
+#horizontal{
+                flex:1 1 150px;
+             }
+#horizontal > ul
+                {                   
+                    display:-webkit-flex;
+                    display:flex;
+                    -webkit-flex-flow:row nowrap;
+                    flex-flow:row nowrap;                    
+                } 
+#horizontal > ul > li
+                {
+                    -webkit-flex:1 1 auto;
+                    flex:1 1 auto;                   
+                }   
+                
+#about{
+    flex:1 1 500px;
+    text-align:left;
+    margin:100px auto 0 auto;     
+}
+/*form styles*/
+#survey {margin:150px auto 0 auto;}/*this centered my form*/
+#survey > fieldset > legend{font-size:2em;}/* this set my form heading font size */
+.row  /*this is the container setting up the format to the form */
+{    
+display:-webkit-flex;
+display:flex;       
+-webkit-flex-flow:row wrap;       
+flex-flow:row wrap;       
+justify-content:space-between;
+}
+.row > *    /*this defines all the font size, spacing and height and width between all elements that are children to the row element */
+{   
+-webkit-flex:1 1 auto;         
+flex:1 1 auto;            
+width: auto;            
+height: 40px;            
+padding:10px;            
+margin:10px;            
+font-size:1.2em;       
+}
+.row > textarea{height:100px;}/*this sets the textarea height so that there is enough room to leave comments. */
+/*images*/
+#pictures{
+          display: -webkit-flex;
+          display:flex;
+          -webkit-flex-flow:row wrap;
+          flex-flow:row wrap;
+          justify-content:center;
+          }
+#pictures > img{
+                    padding:5px;
+                    border:2px solid white;
+               }
+ /*Device styles*/
+@media only screen and (max-width: 480px)
+    {   
+        header{
+                 flex: 1 1 auto;
+                 width:100%;
+              } 
+              h1{font-size:3em;}
+        #horizontal{flex: 1 1 auto;}        
+        #horizontal > ul{
+                            display:flex;
+                            flex-flow:column wrap;                           
+                         }                         
+        #pictures {
+                    display:block;
+                    margin-left:auto;
+                    margin-right:auto;}
+        #pictures > img {width:96%;} 
+        table, tbody ,tr, td ,th{display:block;}
+        thead{display:none;}
+        iframe{width:325px;}
+        .row{width:325px;}
+        #record{display:none}
+    }
+   /*Tablets 481 and greater*/
+@media only screen and (min-width: 481px max-width 769px)
+    {
+        .row{width:325px;}
+    }                        
+
+/*animation*/
+html {
+          -moz-animation:home 5s ease 2s 2;
+           animation:home 5s ease 2s 2;
+       }                 
+@keyframes home  /*M8LO10 Demonstrate a CSS animation or transition - This is a transitional changing the background 
+color and it effects every page as it does it when it opens every page*/
+                {
+                    0%{background-color:hsl(0, 98%, 25%);}
+                    100%{background-color:black;}                   
+                }
+    
+            

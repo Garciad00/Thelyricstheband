@@ -1,0 +1,54 @@
+@charset "UTF-8"; 
+/* Background and list Style */
+html{background-image:none;}
+body{background-image:none;
+background:linear-gradient(white, hsl(0, 98%, 23%));
+}
+/* Table Style */  
+
+h2 {
+        color:white;
+        font-size:2.5em;
+        background-color:transparent;
+        text-align:center;
+        margin-top:50px;
+  }
+#label{background-color:black;width:250px;}
+#video {
+            background-color:hsl(0, 98%, 25%);
+            height:60px;
+            font-size:1em;
+            color:white;
+       }
+table.music { 
+                width:75%;  
+                font-size:1.5em;
+                text-align:center; 
+                border:5px solid hsl(0, 98%, 25%); 
+                margin:0px auto 0px auto;
+            }
+table.music > thead {
+                        background-color:hsl(0, 98%, 25%);
+                        height:60px;
+                        font-size:1em;
+                        color:white;
+                    } 
+table.music > tbody > tr > td{
+                                background-color:transparent;
+                                color:white;
+                                border:.5px solid;
+                                border-color:hsl(0, 98%, 25%);
+                              }   
+table.music > tbody > tr > td > a{color:black;}
+table.music > tfoot {
+                        height:40px;
+                        color: blue;
+                    }    
+/*Audio and Video player styles */
+/* M8LO12 Demonstrate how to format media with CSS -- the impact of these elements allows me to offer multiple forms of media content to my viewsers and greatly increased the visual appeal of my site.*/
+audio{        /*I made it so the audio player fits the whole cell and changed the backgound color to white */
+        display:block;
+        width:100%;
+        background-color:white; 
+     }
+iframe {border:2px solid red;} /*Changed the border to red*/    
