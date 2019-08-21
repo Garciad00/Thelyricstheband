@@ -1,32 +1,38 @@
-@charset "UTF-8"; 
 /* Background and list Style */
-html{background-image:none;}
-body{background-image:none;
-background:linear-gradient(white, hsl(0, 98%, 23%));
+html{background-image:none;
+background:linear-gradient(black, hsl(0, 98%, 25%)); /* M4LO4 Demonstrate the use of gradients (CSS) i used https://www.colorzilla.com/gradient-editor/*/
 }
 /* Table Style */  
 
 h2 {
         color:white;
-        font-size:2.5em;
-        background-color:transparent;
-        text-align:center;
-        margin-top:50px;
+        font-size:3em;
+        margin-left:850px;
+        margin-top:0px;
+        
+        
   }
-#label{background-color:black;width:250px;}
-#video {
-            background-color:hsl(0, 98%, 25%);
-            height:60px;
-            font-size:1em;
-            color:white;
-       }
-table.music { 
-                width:75%;  
+table.music { /* M6LO7 Demonstrate how to format a table with CSS this was the basic table configuration */
+                width:75%;  /* it lets you set the positioning, color scheme, row and column sizes, headings, rows and data */
                 font-size:1.5em;
                 text-align:center; 
                 border:5px solid hsl(0, 98%, 25%); 
-                margin:0px auto 0px auto;
+                margin-top:0px;
+                margin-left:auto;
+                margin-right:auto;
+                
             }
+#label{background-color:black;width:250px;}
+h2 {
+        color:white;
+        font-size:3em;
+        width:100%;
+        text-align:center:
+        margin-bottom:65px;
+        margin-top:0px;
+        
+        
+  }
 table.music > thead {
                         background-color:hsl(0, 98%, 25%);
                         height:60px;
@@ -44,11 +50,20 @@ table.music > tfoot {
                         height:40px;
                         color: blue;
                     }    
-/*Audio and Video player styles */
-/* M8LO12 Demonstrate how to format media with CSS -- the impact of these elements allows me to offer multiple forms of media content to my viewsers and greatly increased the visual appeal of my site.*/
-audio{        /*I made it so the audio player fits the whole cell and changed the backgound color to white */
-        display:block;
-        width:100%;
-        background-color:white; 
-     }
-iframe {border:2px solid red;} /*Changed the border to red*/    
+ /*Device styles*/
+@media only screen and (max-width: 480px)
+    {   
+    html{background-image:none;background-color:white;
+    }
+
+
+   /*Tablets*/
+@media only screen and (min-width: 481px)
+    {
+ 
+    } 
+@media only screen and (min-width: 481px)
+    {
+ 
+    } 
+
