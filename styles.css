@@ -1,7 +1,6 @@
  @charset "UTF-8"; 
  /*background*/
- /* html{background-image:url("images/lyricsBackground.png");} */
-html{background-image:url(" https://github.com/Garciad00/Thelyricstheband/tree/master/Images")]
+ html{background-image:url("Images/lyricsBackground.png");}
  
  /* List Styles */
 li{list-style-type:none;}
@@ -131,15 +130,15 @@ font-size:1.2em;
     }                        
 
 /*animation*/
-html {
+h1 {
           -moz-animation:home 5s ease 2s 2;
            animation:home 5s ease 2s 2;
        }                 
 @keyframes home  /*M8LO10 Demonstrate a CSS animation or transition - This is a transitional changing the background 
-color and it effects every page when it opens every page*/
+color and it effects every page as it does it when it opens every page*/
                 {
-                    0%{background-color:hsl(0, 98%, 25%);}
-                    100%{background-color:black;}                   
+                    0%{color:hsl(0, 98%, 25%);}
+                    100%{color:black;}                   
                 }
     
             
