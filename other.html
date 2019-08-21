@@ -1,35 +1,79 @@
+<!doctype html>
 <html lang="en">
 <head>
   <!--
    New Perspectives on HTML5 and CSS3, 7th Edition
-   V2
+   V3
    
    The Lyrics Website
    Author: Daniel Garcia
-   Date:   08/09/2019
+   Date:   08/14/2019
    
-   Filename: index.html
+   Filename: other.html
    -->
    <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
    <meta name="keywords" content="music,the lyrics,Mr Man, wait"/>
    <title>The Lyrics </title>
    <link href="styles.css" rel="stylesheet"/>
+   <link href="table.css" rel="stylesheet"/>
 </head>
 <body>
-        <header>
+    <header>
         <h1>The Lyrics </h1>
-   <!--  </header> -->
+    </header>
 <nav id="horizontal">  
     <ul>
            <li><a href="index.html" >Home  </a></li>
            <li><a href="about.html" >About </a></li>
            <li><a href="photos.html">Photos</a></li>
            <li><a href="music1.html" >Music </a></li>
-           <li><a href="other.html" >Links </a></li>
+           <li><a href="other.html" >Survey </a></li>
     </ul>
 </nav>
+<br/>
 
-</header>
-<!-- <footer>just checking to see if this works Checking</footer> -->
+<form id="survey" action="#" method="get">
+<fieldset>
+    <legend>Please leave us a comment!</legend>
+    <div class="row">
+        <label for="name">Name</label>
+        <input name="userName" id="name" type="text" placeholder="Enter your name" /><!-- M7LO5 Demonstrate the use of a text box in a form -->
+    </div>
+    <div class="row">
+        <label for="chkBox">Check the box if you ever saw them live</label>
+        <input name="seeLive" id="chkBox" type="checkbox"  /><!-- M7LO6 Demonstrate the use of check boxes in a form -->
+    </div>
+    <div class="row" id="chkbox">
+        <label> Do you have a favorite song?</label>
+        <label for="obYes">Yes</label>
+        <input name="ob" id="obYes" value="yes" type="radio" /><!-- M7LO7 Demonstrate the use of radio buttons in a form -->
+        <label for="obNo">No</label>
+        <input name="ob" id="obNo" value="no" type="radio" /><!-- M7LO7 Demonstrate the use of radio buttons in a form -->
+    </div>
+    <div class="row">
+        <label for="selection">Select your favorite song</label>
+        <select name="selection" id="selection"><!-- M7LO8 Demonstrate the use of a selection list in a form-->
+            <option value="song1">Mr Man</option>
+            <option value="song2">Wait</option>
+            <option value="song3">So What</option>
+            <option value="song4">They can't hurt me anymore</option>
+            <option value="song5">My Son</option>
+            <option value="song6">So Glad</option>
+            <option value="song7">Wake up to my voice</option>
+            <option value="song8">Can't see you anymore</option>
+            <option value="song9">Why did he go</option>
+        </select>        
+    </div>
+    <div class="row">
+        <label for="comment">Please leave a comment below</label>
+        <textarea name="cArea" id="comment"></textarea><!-- M7LO9 Demonstrate the use of a text area in a form -->
+    </div>
+    <div class="row" id="buttons"><!-- M7LO10 Demonstrate the use of a submit button in a form -->
+         <input type="submit" value="Submit"/>
+         <input type="reset" value="Cancel"/>
+    </div>     
+</fieldset>   
+</form>
 </body>
 </html>

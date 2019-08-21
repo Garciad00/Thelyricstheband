@@ -3,42 +3,64 @@
 <head>
    <!--
    New Perspectives on HTML5 and CSS3, 7th Edition
-   V2
+   V3
    
    The Lyrics Website
    Author: Daniel Garcia
-   Date:   08/09/2019
+   Date:   08/14/2019
    
    Filename: about.html
    -->
    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>The Lyrics</title>
    <link href="styles.css" rel="stylesheet"/> 
+   <link href="table.css" rel="stylesheet"/>
 </head>
 <body>
- <header>
-    <h1>The Lyrics</h1>
-   <nav id="horizontal"> 
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="photos.html">Photos</a></li>
-            <li><a href="music1.html">Music</a></li>
-            <li><a href="other.html">Other</a></li>
-        </ul>
-   </nav>
-</header>
-   <br/>
-   <div id="about">
+        <header>
+            <h1>The Lyrics </h1>
+        </header>
+<nav id="horizontal">
+    <ul>
+           <li><a href="index.html" >Home  </a></li>
+           <li><a href="about.html" >About </a></li>
+           <li><a href="photos.html">Photos</a></li>
+           <li><a href="music1.html" >Music </a></li>
+           <li><a href="other.html" >Survey </a></li>
+    </ul>
+</nav>
+        
+    <article id="about">
+        <h2>About</h2>
+        <p>CIS 155 Daniel Garcia Version 1 07/20/2019</p>
+        <p>For my site I used a header, footer, navigation, and div section 
+        for my paragraphs.I made my background color black in the html section 
+        and changed my font colors to white. I added an id so i could set my 
+        options different in my css for the about.html page. I attempted using 
+        psuedo code to enable the hover (color change) of my navigation bar and set the links.
+        For my layout I used more of a floating elements - i believe that is what it is called.
+        I used one image for the index file and put it in the images directory to access it
+        I used the footer for a date - could become a copyright sign in the future. 
+        Set my font colors with a global setting.</p>   
+        <p>CIS 155 Daniel Garcia Version 2 08/10/2019</p>
         <p>For this version of my site I added a background photo on the index page . 
-        updated the header. Added a table for the music page to organize and explain 
-        a little about the songs. I used some linear gradient and am still experimenting 
-        find the right colors I want. I added a table css file to overide the photo, 
-        i dont want it on that page, and find a linear blend instead. I still have a lot 
-        of work to do on the photo and other page that is gonna take me awhile to complete. 
+           updated the header. Added a table for the music page to organize and explain 
+           a little about the songs. I used some linear gradient and am still experimenting 
+           find the right colors I want. I added a table css file to overide the photo, 
+           i dont want it on that page, and find a linear blend instead. I still have a lot 
+           of work to do on the photo and other page that is gonna take me awhile to complete. 
         </p>
-    </div>
-    <br/>
-        <footer>&#169; 7/2019</footer>
+        <p>CIS 155 Daniel Garcia Version 3 08/20/2019</p>
+        <p>This update i added a form (survey for viewers) changed the background colors for the entire site.
+           I added an iframe and two audio files to the music table. The background colors give it more of a consitant flow. 
+           The audio and video add great content. The form enables a window to see what users think and feel about the content
+           and the site itself.
+           My github repository is https://github.com/Garciad00/Thelyricstheband.git
+        </p>
+        <br/>
+    </article>
+    
+  
 </body>
 </html>
